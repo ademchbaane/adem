@@ -1,0 +1,46 @@
+.button {
+      display: inline-block;
+      padding: 40px 18%;
+      margin: 5px;
+      font-size: 50px;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      border-radius: 200px;
+      /* box-shadow: 5px 10px red; */
+      text-shadow: 2px 2px greenyellow;
+    }
+    .button:hover {
+      background-color: gold;
+       transform: scale(1.5,1.2);
+      /* transform: skew(30deg,20deg); */
+      opacity: 0.3;
+      animation: anim1 2s infinite;
+      /* transition:all 2s 1s; */
+
+    }
+    body{
+        background-color: rgba(208, 200, 168, 0.175);
+    }
+    img{
+        width:40%;
+        display: block;
+        margin: auto;
+        position:relative;
+        /* animation:anim 2s infinite alternate-reverse; */
+    }
+    div{
+        text-align: center;
+    }
+    @keyframes anim1{
+        0%{transform:rotate(10deg);}
+        50%{transform:rotate(-10deg);}
+        100%{transform:rotate(10deg);}
+    }
+    @keyframes anim{
+        0%{left:0px; }
+        25%{left:25%}
+        50%{left:50%;}
+        75%{left:75%;}
+        100%{left:100%;}
+    }
